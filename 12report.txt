@@ -1,0 +1,14 @@
+Sun Jan 21 21:25:11 PST 2024
+ashleybetchart
+/Users/ashleybetchart
+/bin/zsh
+/Users/ashleybetchart/Code/mcb185_homework
+/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+Darwin Ashleys-MacBook-Air-102.local 22.4.0 Darwin Kernel Version 22.4.0: Mon Mar  6 21:00:41 PST 2023; root:xnu-8796.101.5~3/RELEASE_ARM64_T8103 arm64
+Python 3.9.6
+/Users/ashleybetchart/Code
+/Users/ashleybetchart/Code/mcb185_homework
+/Users/ashleybetchart/Code/mcb185_homework/.git
+/Users/ashleybetchart/Code/MCB185
+/Users/ashleybetchart/Code/MCB185/.git
+/Users/ashleybetchart/Code/MCB185/data

@@ -1,0 +1,1 @@
+gunzip -c dictionary.gz |grep -v "[bdefghjklmpqstuvwxy]" | grep "r" | grep -E ".{3}." -c
