@@ -3,7 +3,7 @@
 
 import math 
 
-def oligotemp (a, c, g, t):
+def oligotemp(a, c, g, t):
 	total = (a + c + g + t)
 	if type(a) != int or type(c) != int or type(g) != int or type(t) != int:
 		return 'error: must be whole numbers'
