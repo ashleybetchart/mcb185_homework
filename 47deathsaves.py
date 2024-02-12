@@ -16,12 +16,12 @@ for i in range(games):
 		d = random.randint(1, 20)
 		if d == 20:
 			r += 1
-		if d >= 10 and d < 20:
+		elif d >= 10 and d < 20:
 			s += 1
-		if d < 10 and d > 1:
+		elif d < 10 and d > 1:
 			f += 1
-		if d == 1:
-			f += 2
+		else: 
+			f+=2 
 		if f >= 3:
 			die += 1
 		if s >= 3:
