@@ -21,24 +21,12 @@ def disadvantage():
 games = 1000
 for i in range(5, 16, 5):
 	print(i, end = '\t')
-	success = 0
+	adv = 0
+	dis = 0
+	nor = 0
 	for j in range(games):
-		a = advantage()
-		if a >= i: success += 1
-	print(success/games)
+		if advantage() >= i: adv += 1
+		if normal() >= i: nor += 1
+		if disadvantage() >= i: dis += 1
+	print(adv/games, dis/games, nor/games)
 
-for i in range(5, 16, 5):
-	print(i, end = '\t')
-	success = 0
-	for j in range(games):
-		n = normal()
-		if n >= i: success += 1
-	print(success/games)
-
-for i in range(5, 16, 5):
-	print(i, end = '\t')
-	success = 0
-	for j in range(games):
-		d = disadvantage()
-		if d >= i: success += 1
-	print(success/games)
