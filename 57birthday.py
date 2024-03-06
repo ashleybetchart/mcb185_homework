@@ -13,7 +13,7 @@ for i in range(trials):
 	calendar = []
 	for j in range(days):
 		calendar.append(0)
-	for k in range(people):
+	for j in range(people):
 		birthday = random.randint(0, days - 1)
 		calendar[birthday] += 1
 	match = False

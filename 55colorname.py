@@ -8,8 +8,7 @@ R = int(sys.argv[2])
 G = int(sys.argv[3])
 B = int(sys.argv[4])
 
-min = 1000				#if d < min(d), the min is now d
-hexd = []
+mind = 1000
 with open(colorfile) as fp:
 	for line in fp:
 		words = line.split('\t')
@@ -18,9 +17,8 @@ with open(colorfile) as fp:
 		r = int(dec[0])
 		g = int(dec[1])
 		b = int(dec[2])
-		print(color + abs(R-r) + abs(G-g) + abs(B-b))  # replace w below d = (abs, rm color)
-		d = ^
+		d = abs(R - r) + abs(B - b) + abs(G - g)
 		if d < mind:
 			mind = d
-			result = color:
+			result = color
 print(result)
