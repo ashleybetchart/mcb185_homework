@@ -18,19 +18,14 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
 		c = s.count('C')
 		g = s.count('G')
 		t = s.count('T')
-		if a > 0: ent += (a / w) * math.log2(a / w)
-		if c > 0: ent += (c / w) * math.log2(c / w)
-		if g > 0: ent += (g / w) * math.log2(g / w)
-		if t > 0: ent += (t / w) * math.log2(t / w)
+		if a > 0: ent -= (a / w) * math.log2(a / w)
+		if c > 0: ent -= (c / w) * math.log2(c / w)
+		if g > 0: ent -= (g / w) * math.log2(g / w)
+		if t > 0: ent -= (t / w) * math.log2(t / w)
 		ent *= 1
 		if ent < threshold:
 			for j in range(w): out[i+j] = 'N'
 	print(''.join(out))
 
-# python3 63dust.py ../MCB185/data/GCF_000005845.2_ASM584v2_protein.fna.gz 20 4
-
-###### python3 63dust.py ../MCB185/data/GCF_000005845.2_ASM584v2_protein.faa.gz 20 4
-
-#python3 63dust.py ../MCB185/data/GCF_000005845.2_ASM584v2_genomic.fna.gz 20 4
-#make changes to this,smthg wrong
+# python3 63dust.py ../MCB185/data/GCF_000005845.2_ASM584v2_genomic.fna.gz 20 1.4
 
