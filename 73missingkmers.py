@@ -13,15 +13,11 @@ for k in range(1, 10):
 			kmer = seq[i:i+k]
 			revk = rev[i:i+k]
 			if kmer not in kcount: kcount[kmer] = 0
-			if revk not in kcount: kcount[revk] = 0
 			kcount[kmer] += 1
+			if revk not in kcount: kcount[revk] = 0
 			kcount[revk] += 1
 	if len(kcount.keys()) == 4**k: continue
 	for ktup in itertools.product('ACGT', repeat=k):
 		kmer = ''.join(ktup)
 		if kmer not in kcount: print(kmer)
-# python3 73missingkmers.py ../MCB185/data/GCF_000005845.2_ASM584v2_genomic.fna.gz
 
-
-
-#look at again, need to get 52
